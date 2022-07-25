@@ -8,19 +8,29 @@ const Index = () => {
         <h1 style={{ color: "rgba(197, 11, 219, 0.8)" }}>Skill-Drills</h1>
         <ul className="nav_child">
           <li>
-            <Link to={"#"}>Home</Link>
+            <Link to={"#"}>
+              <b>Home</b>
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>Courses</Link>
+            <Link to={"#"}>
+              <b>Courses</b>
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>Contact Us</Link>
+            <Link to={"#"}>
+              <b>Contact Us</b>
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>Projects</Link>
+            <Link to={"#"}>
+              <b>Projects</b>
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>Video Section</Link>
+            <Link to={"#"}>
+              <b>Video Section</b>
+            </Link>
           </li>
         </ul>
       </nav>
