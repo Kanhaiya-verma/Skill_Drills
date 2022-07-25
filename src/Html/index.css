@@ -2,6 +2,7 @@
   width: 100%;
   background-position: center;
   margin-left: 2px;
+  box-shadow: 2px 2px 4px  #333;
 }
 
 .navigation {
@@ -29,7 +30,7 @@
 .navigation ul li {
   display: table-cell;
   position: relative;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* .navigation ul li {
@@ -66,3 +67,10 @@
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+
+
+
+
+
+

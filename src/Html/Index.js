@@ -5,31 +5,37 @@ const Index = () => {
   return (
     <div className=" banner card">
       <nav className=" navigation">
-        <h1 style={{ color: "rgba(197, 11, 219, 0.8)" }}>Skill-Drills</h1>
+        <Link style={{textDecoration:"none"}} to={"/Home"}><h1 style={{ color: "rgba(197, 11, 219, 0.8)",width:"250px", padding:"5px"}}>Skill-Drills</h1></Link>
         <ul className="nav_child">
-          <li>
-            <Link to={"#"}>
+          <li>  
+            <Link to={"/Home"}>
               <b>Home</b>
             </Link>
           </li>
           <li>
-            <Link to={"#"}>
+            <Link to={"/Courses"}>
               <b>Courses</b>
             </Link>
           </li>
+         
           <li>
-            <Link to={"#"}>
-              <b>Contact Us</b>
-            </Link>
-          </li>
-          <li>
-            <Link to={"#"}>
+            <Link to={"/Projects"}>
               <b>Projects</b>
             </Link>
           </li>
           <li>
-            <Link to={"#"}>
+            <Link to={"/VideosLecture"}>
               <b>Video Section</b>
+            </Link>
+          </li>
+          <li>
+            <Link to={"/ContactUs"}>
+              <b>Contact Us</b>
+            </Link>
+          </li>
+          <li>
+            <Link to={"/Login"}>
+              <b>Become Member</b>
             </Link>
           </li>
         </ul>
