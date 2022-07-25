@@ -1,6 +1,6 @@
 import * as React from "https://cdn.skypack.dev/react@17.0.1";
 import "./index.css";
-import * as ReactDOM from "https://cdn.skypack.dev/react-dom@17.0.1";
+
 import { useState, useEffect } from "react";
 
 const Sidebar = () => {
@@ -135,13 +135,5 @@ const Sidebar = () => {
     </div>
   );
 };
-
-ReactDOM.render(
-  <div className="container">
-    <Sidebar />
-    <p className="text">THIS IS MY SIDEBAR!</p>
-  </div>,
-  document.getElementById("root")
-);
 
 export default Sidebar;
