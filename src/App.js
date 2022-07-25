@@ -1,10 +1,12 @@
 import "./App.css";
-import Sidebar from "./Html/Sidebar";
+import Index from "./Html/Index";
+import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div>
-      <h1> Skill Drills</h1>
-      <Sidebar />
+      <Routes>
+        <Route path="/" element={<Index />} />
+      </Routes>
     </div>
   );
 }
