@@ -19,8 +19,8 @@ const SignUp = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    localStorage.setItem("email", JSON.stringify(email));
-    localStorage.setItem("password", JSON.stringify(password));
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
     console.log("save in local storage");
   };
 

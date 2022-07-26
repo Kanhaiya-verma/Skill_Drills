@@ -6,6 +6,7 @@ import Index from "../Html/Index";
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
+
   const [password, setPassword] = useState("");
 
   const userEmail = localStorage.getItem("email")
@@ -28,12 +29,9 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (email === userEmail && password === userPassword) {
-      console.log("successfull");
-      navigate("/Home");
-    } else {
-      alert("email or password");
-    }
+    email == userEmail && password == userPassword
+      ? navigate("/Home")
+      : alert("Invalid email or password");
   };
 
   return (
