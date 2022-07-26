@@ -1,21 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Login.css";
 import Index from "../Html/Index";
+import "./Login.css";
+import { NavLink } from "react-router-dom";
 
-const Login = () => {
-  const navigate = useNavigate();
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const userEmail = localStorage.getItem("email")
-    ? localStorage.getItem("email")
-    : "admin@gmail.com";
-  console.log(userEmail);
-  const userPassword = localStorage.getItem("password")
-    ? localStorage.getItem("password")
-    : "admin";
-  console.log(userPassword);
 
   const emailHandler = (e) => {
     setEmail(e.target.value);
@@ -28,22 +18,21 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    if (email === userEmail && password === userPassword) {
-      console.log("successfull");
-      navigate("/Home");
-    } else {
-      alert("email or password");
-    }
+
+    localStorage.setItem("email", JSON.stringify(email));
+    localStorage.setItem("password", JSON.stringify(password));
+    console.log("save in local storage");
   };
 
   return (
     <div>
       <Index />
+
       <div className="container">
         <div className="col-md-5 ml-auto mr-auto mt-5">
           <div className=" card d-flex justify-content-center p-5 card_design">
             <div style={{ textAlign: "center", color: "#c50bdbcc" }}>
-              <h1>Login</h1>
+              <h1>SignUp</h1>
             </div>
 
             <form onSubmit={submitHandler}>
@@ -89,6 +78,12 @@ const Login = () => {
               <button type="submit" className="btn button_style">
                 Submit
               </button>
+              <small id="LoginText" className="form-text text-muted mt-3 ">
+                Already member
+                <NavLink to={"/Login"} style={{ color: "  #c50bdacc" }}>
+                  <b> Login Here</b>
+                </NavLink>
+              </small>
             </form>
           </div>
         </div>
@@ -97,4 +92,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;

@@ -2,7 +2,7 @@
   width: 100%;
   background-position: center;
   margin-left: 2px;
-  box-shadow: 2px 2px 4px  #333;
+  box-shadow: 2px 2px 4px #333;
 }
 
 .navigation {
@@ -67,10 +67,3 @@
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-
-
-
-
-
-
-

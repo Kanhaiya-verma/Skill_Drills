@@ -34,7 +34,7 @@ const Index = () => {
             </Link>
           </li>
           <li>
-            <Link to={"/Login"}>
+            <Link to={"/SignUp"}>
               <b>Become Member</b>
             </Link>
           </li>
