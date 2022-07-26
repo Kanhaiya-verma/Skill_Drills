@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import Index from "../Html/Index";
+// import Index from "../Html/Index";
+import LoginHeader from "./LoginHeader";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Login = () => {
 
   return (
     <div>
-      <Index />
+      <LoginHeader />
       <div className="container">
         <div className="col-md-5 ml-auto mr-auto mt-5">
           <div className=" card d-flex justify-content-center p-5 card_design">
