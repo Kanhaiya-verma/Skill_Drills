@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Index from "../Html/Index";
 import "./Login.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -18,10 +19,10 @@ const SignUp = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-    console.log("save in local storage");
+    navigate("/Login");
+    alert("save again");
   };
 
   return (
@@ -35,7 +36,7 @@ const SignUp = () => {
               <h1>SignUp</h1>
             </div>
 
-            <form onSubmit={submitHandler}>
+            <form>
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input
@@ -75,7 +76,11 @@ const SignUp = () => {
                   Remember me
                 </label>
               </div>
-              <button type="submit" className="btn button_style">
+              <button
+                type="submit"
+                className="btn button_style"
+                onClick={submitHandler}
+              >
                 Submit
               </button>
               <small id="LoginText" className="form-text text-muted mt-3 ">

@@ -29,7 +29,7 @@ const Login = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    email == userEmail && password == userPassword
+    email === userEmail && password === userPassword
       ? navigate("/Home")
       : alert("Invalid email or password");
   };
