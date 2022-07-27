@@ -25,17 +25,17 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className="background">
       <Index />
 
-      <div className="container">
-        <div className="col-md-5 ml-auto mr-auto mt-5">
+      <div className="container ">
+        <div className="col-md-5 ml-auto mr-auto">
           <div className=" card d-flex justify-content-center p-5 card_design">
-            <div style={{ textAlign: "center", color: "#c50bdbcc" }}>
+            <div style={{ textAlign: "center", color: "#c50bdbcc", backgroundImage: "linear-gradient(#df82e9cc, rgb(233, 233, 233))" }}>
               <h1>SignUp</h1>
             </div>
 
-            <form>
+            <form className="mt-5">
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input

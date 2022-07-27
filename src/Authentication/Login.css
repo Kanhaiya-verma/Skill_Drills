@@ -1,8 +1,12 @@
 .card_design {
   box-shadow: 1px 4px 6px 0px #333;
+  margin-top: 3.5rem;
 }
 .button_style {
-  background-color: rgba(197, 11, 218, 0.8);
+  background-color: #c50bdacc;
   box-shadow: 1px 1px 3px #333;
   color: #fff;
+}
+.background{
+  background-image: linear-gradient(#df82e9cc, rgb(233, 233, 233));
 }
