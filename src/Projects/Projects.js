@@ -1,13 +1,12 @@
-import React from 'react'
-import Index from '../Html/Index'
+import React from "react";
+import LoginHeader from "../Authentication/LoginHeader";
 const Projects = () => {
   return (
-
     <div>
-        
-        <Index/>
-        <h1>Projects</h1></div>
-  )
-}
+      <LoginHeader />
+      <h1>Projects</h1>
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;

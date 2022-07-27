@@ -8,6 +8,7 @@ import Projects from "./Projects/Projects";
 import Videos from "./VideosLecture/Videos";
 import ContactUs from "./ContactUs/ContactUs";
 import SignUp from "./Authentication/SignUp";
+import Auth from "./Authentication/Auth";
 function App() {
   return (
     <div>
@@ -15,8 +16,10 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Courses" element={<Course />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/VideosLecture" element={<Videos />} />
+        <Route element={<Auth />}>
+          <Route path="/VideosLecture" element={<Videos />} />
+          <Route path="/Projects" element={<Projects />} />
+        </Route>
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />

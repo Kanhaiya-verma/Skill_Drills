@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Login.css";
-// import Index from "../Html/Index";
-import LoginHeader from "./LoginHeader";
+import Index from "../Html/Index";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -31,13 +30,13 @@ const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     email === userEmail && password === userPassword
-      ? navigate("/Home")
-      : alert("Invalid email or password");
+      ? navigate("/Home", { replace: true })
+      : alert("Invalid email & password OR signup first ");
   };
 
   return (
     <div>
-      <LoginHeader />
+      <Index />
       <div className="container">
         <div className="col-md-5 ml-auto mr-auto mt-5">
           <div className=" card d-flex justify-content-center p-5 card_design">
@@ -88,6 +87,12 @@ const Login = () => {
               <button type="submit" className="btn button_style">
                 Submit
               </button>
+              <small id="SignUpText" className="form-text text-muted mt-3 ">
+                Become member
+                <NavLink to={"/SignUp"} style={{ color: "  #c50bdacc" }}>
+                  <b> SignUp Here</b>
+                </NavLink>
+              </small>
             </form>
           </div>
         </div>

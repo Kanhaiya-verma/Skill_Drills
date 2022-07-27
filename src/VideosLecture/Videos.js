@@ -1,12 +1,13 @@
-import React from 'react'
-import Index from '../Html/Index'
+import React from "react";
+import LoginHeader from "../Authentication/LoginHeader";
 
 const Videos = () => {
   return (
     <div>
-        <Index/>
-       <h1> Videos</h1></div>
-  )
-}
+      <LoginHeader />
+      <h1> Videos</h1>
+    </div>
+  );
+};
 
-export default Videos
+export default Videos;

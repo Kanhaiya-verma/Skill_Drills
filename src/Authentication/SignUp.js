@@ -21,8 +21,7 @@ const SignUp = () => {
     e.preventDefault();
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-    navigate("/Login");
-    alert("save again");
+    navigate("/Login", { replace: true });
   };
 
   return (

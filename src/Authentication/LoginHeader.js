@@ -1,5 +1,6 @@
 import "../Html/index.css";
 import { Link } from "react-router-dom";
+import Logout from "./Logout";
 
 const LoginHeader = () => {
   return (
@@ -43,9 +44,7 @@ const LoginHeader = () => {
               <b>Contact Us</b>
             </Link>
           </li>
-          <button className="btn btn-danger" style={{ color: "#ffff" }}>
-            <Link to={"/Home"}>Logout</Link>
-          </button>
+          <Logout />
         </ul>
       </nav>
     </div>
