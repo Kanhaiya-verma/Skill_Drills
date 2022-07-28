@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Index from "../Html/Index";
 import "./Login.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import { FcBusinessContact } from "react-icons/fc";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -49,9 +48,9 @@ const SignUp = () => {
                   onChange={emailHandler}
                   value={email}
                 />
-            {    
-              // <div className="icon"><FcBusinessContact /></div>
-          }
+                {
+                  // <div className="icon"><FcBusinessContact /></div>
+                }
 
                 <small id="emailHelp" className="form-text text-muted">
                   We'll never share your email with anyone else.
