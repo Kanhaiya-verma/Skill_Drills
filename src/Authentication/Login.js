@@ -35,7 +35,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="background">
       <Index />
       <div className="container">
         <div className="col-md-5 ml-auto mr-auto mt-5">

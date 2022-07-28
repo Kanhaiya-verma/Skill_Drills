@@ -1,5 +1,4 @@
 import "./App.css";
-import Index from "./Html/Index";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home/Home";
 import Login from "./Authentication/Login";
@@ -13,8 +12,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Courses" element={<Course />} />
         <Route element={<Auth />}>
           <Route path="/VideosLecture" element={<Videos />} />

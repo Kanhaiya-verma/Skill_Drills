@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <div className=" banner card">
       <nav className=" navigation">
-        <Link style={{ textDecoration: "none" }} to={"/Home"}>
+        <Link style={{ textDecoration: "none" }} to={"/"}>
           <h1
             style={{
               color: "rgba(197, 11, 219, 0.8)",
@@ -18,7 +18,7 @@ const Index = () => {
         </Link>
         <ul className="nav_child">
           <li>
-            <Link to={"/Home"}>
+            <Link to={"/"}>
               <b>Home</b>
             </Link>
           </li>

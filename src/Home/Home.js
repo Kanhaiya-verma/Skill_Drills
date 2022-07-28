@@ -7,11 +7,8 @@ const Home = () => {
   return (
     <div>
       <Index />
-      <section>
-        <img className="image1" src={images} alt="skill drills" />
-        <img className="image1" src={images} alt="skill drills" />
-        <img className="image1" src={images} alt="skill drills" />
-      </section>
+
+      <img className="image1" src={images} alt="skill drills" />
     </div>
   );
 };

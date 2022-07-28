@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Index from "../Html/Index";
 import "./Login.css";
 import { NavLink, useNavigate } from "react-router-dom";
+import { FcBusinessContact } from "react-icons/fc";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -31,13 +32,14 @@ const SignUp = () => {
       <div className="container ">
         <div className="col-md-5 ml-auto mr-auto">
           <div className=" card d-flex justify-content-center p-5 card_design">
-            <div style={{ textAlign: "center", color: "#c50bdbcc", backgroundImage: "linear-gradient(#df82e9cc, rgb(233, 233, 233))" }}>
+            <div style={{ textAlign: "center", color: "#c50bdbcc" }}>
               <h1>SignUp</h1>
             </div>
 
             <form className="mt-5">
               <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
+
                 <input
                   type="email"
                   className="form-control"
@@ -47,6 +49,10 @@ const SignUp = () => {
                   onChange={emailHandler}
                   value={email}
                 />
+            {    
+              // <div className="icon"><FcBusinessContact /></div>
+          }
+
                 <small id="emailHelp" className="form-text text-muted">
                   We'll never share your email with anyone else.
                 </small>

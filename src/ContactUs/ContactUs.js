@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import Index from "../Html/Index";
 
 const ContactUs = () => {
-  const input = useRef();
+  const [input, setInput] = useState("");
+  const inputNew = useRef("Kanhaiya");
   const buttonHandler = () => {
-    input.current.value();
+    console.log((inputNew.current.text = localStorage.setItem("Text", input)));
   };
   console.log(input);
 
@@ -14,8 +15,17 @@ const ContactUs = () => {
       <Index />
 
       <h1>ContactUs</h1>
-      <input ref={input} type="text" placeholder="Enter Name" />
-      <button onClick={buttonHandler}>name save</button>
+      <input
+        ref={inputNew}
+        type="text"
+        name="inputfield"
+        placeholder="Enter Name"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+      />
+      <button onClick={buttonHandler} className="btn btn-danger ml-2">
+        name save
+      </button>
     </div>
   );
 };
